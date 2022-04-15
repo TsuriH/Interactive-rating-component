@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #131518;
+}
+
+.container {
+    width: 327px;
+    height: 380px;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%); ;
+    border-radius:15px;
+    padding: 30px; 
+ 
+    
+    
+}
+
+.img-container {
+    background: #262E38;
+    width: 42px;
+    height: 42px;
+    border-radius: 50px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-star {
+    width:14px;
+    height:14px;
+}
+
+h1 {
+    color:white;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+#content-paragraph {
+    color:#969FAD;
+    font-size: 14px;
+    line-height: 22px;
+
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.choose {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border-style: none;
+    color:#7C8798;
+    font-weight: 700;
+    background:#262E38;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.choose:hover {
+    background: #FC7614;
+    color: white;
+}
+
+.btn-clicked{
+    background: #7C8798;
+    color: white;
+}
+
+#submit {
+   display: block;
+   margin: 0 auto;
+   margin-top: 32px;
+   width:279px;
+   height: 45px;
+   border-radius: 50px ;
+   border-style: none;
+   color: white;
+   background: #FC7614;
+   letter-spacing: 3px;
+   cursor: pointer
+
+}
+
+#submit:hover {
+    color: #FC7614;
+    background: white;
+}
+
+@media only screen and (min-width:700px) {
+    .container {
+        width: 412px;
+        height: 400px;
+        border-radius:30px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+ 
+    .choose {
+        width: 51px;
+        height: 51px;
+        font-size: 15px;
+    }
+    #submit {
+        width:341px;
+        height: 45px;
+    }
+
+    .img-container {
+        background: #262E38;
+        width: 48px;
+        height: 48px;
+        border-radius: 50px;  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .img-star {
+        width:16.75px
+        ;
+        height:16px;
+    }
+    
+}
