@@ -1,26 +1,20 @@
-const buttonOne = document.getElementById("btn-one")
-const buttonTwo = document.getElementById("btn-two")
-const buttonThree = document.getElementById("btn-three")
-const buttonFour = document.getElementById("btn-four")
-const buttonFive = document.getElementById("btn-five")
 let rateResult = ''
-const buttonsArr = [buttonOne, buttonTwo, buttonThree, buttonFour, buttonFive]
+const buttonsArray = Array.from(document.querySelectorAll('.choose'))
 
 function paintBtn(button) {
-    buttonsArr.map(btn => btn.classList.remove("btn-clicked"))
+    buttonsArray.map(btn => btn.classList.remove("btn-clicked"))
     button.classList.add("btn-clicked")
-    for (item of buttonsArr) {
+    for (item of buttonsArray) {
         if (item.classList.contains("btn-clicked")) {
-            rateResult = item.value   
-           
+            rateResult = item.value
+            console.log(rateResult)
+            sessionStorage.setItem("rate",rateResult)
         }
-       
-    } 
-    const yourRate = document.getElementById("your-rate-msg")
-    yourRate.innerText = rateResult
+    }
+
 }
 
-
+document.getElementById("your-rate-msg").innerText = `You rate us  ${sessionStorage.getItem("rate")} of 5`
 
 
 
